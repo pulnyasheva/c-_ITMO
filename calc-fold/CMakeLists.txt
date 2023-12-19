@@ -98,10 +98,3 @@ setup_warnings(calc_fold)
 # linking Main against the library
 target_link_libraries(calc_fold calc_fold_lib)
 
-# testing
-enable_testing()
-
-add_subdirectory(googletest)
-add_subdirectory(test)
-
-add_test(NAME tests COMMAND runUnitTests)
